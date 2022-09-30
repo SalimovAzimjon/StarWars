@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="height">height: %s</string>
+    <string name="mass">mass: %s</string>
+</resources>
