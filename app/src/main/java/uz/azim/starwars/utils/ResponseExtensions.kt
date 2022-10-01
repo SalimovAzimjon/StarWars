@@ -9,7 +9,6 @@ fun <T> Response<T>.handleResponse(): T {
     return if (isSuccessful && body != null) {
         body
     } else {
-        Log.d("TAGx", "${message()}")
         throw when (code()) {
             HttpURLConnection.HTTP_INTERNAL_ERROR -> ServerNotRespondingException(message())
             else -> UnkownException(message())
